@@ -1,0 +1,2 @@
+# templates
+front project templates
