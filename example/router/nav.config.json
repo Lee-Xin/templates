@@ -1,0 +1,31 @@
+{
+  "zh-CN": [
+    {
+      "name": "开发指南",
+      "children": [
+        {
+          "path": "/install",
+          "name": "安装"
+        },
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        }
+      ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "组件用例",
+          "list": [
+            {
+              "path": "/test",
+              "title": "组件用例"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
