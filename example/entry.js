@@ -35,11 +35,16 @@ router.afterEach(route => {
   const data = title[route.meta.lang];
   for (let val in data) {
     if (new RegExp("^" + val, "g").test(route.name)) {
-      document.title = data[val];
+      let title = data[val];
+      const splitText = route.name.split(route.meta.lang);
+      if (splitText[1]) {
+        title += ` | ${splitText[1]}`;
+      }
+      document.title = title;
       return;
     }
   }
-  document.title = "echarts-custom";
+  document.title = "app";
 });
 
 new Vue({
